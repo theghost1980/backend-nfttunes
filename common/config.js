@@ -1,0 +1,33 @@
+require('dotenv').config();
+
+module.exports = {
+  APP_PREFIX: 'nfttunz',
+  ACCOUNT: process.env.ACCOUNT,
+  ACTIVE_KEY: process.env.ACTIVE_KEY,
+  JWT_SECRET: process.env.JWT_SECRET,
+  MONGODB: process.env.MONGODB,
+  PORT: process.env.PORT || 3000,
+  ACCESS_TOKEN_EXPIRATION: '15m',
+  REFRESH_TOKEN_EXPIRATION: '90d',
+  SIDECHAIN_ID: 'ssc-mainnet-hive',
+  SIDECHAIN_RPC: 'https://api.hive-engine.com/rpc',
+  NODES: ['https://api.hive.blog', 'https://anyx.io', 'https://rpc.ecency.com', 'https://rpc.ausbit.dev', 'https://api.pharesim.me'],
+  DO_BUCKET: 'nfttunz-io',
+  DO_ACCESS_KEY: process.env.DO_ACCESS_KEY,
+  DO_ACCESS_KEY_SECRET: process.env.DO_ACCESS_KEY_SECRET,
+  DO_BASE_URL: 'https://cdn.nfttunz.io',
+  DO_ENDPOINT: 'sfo3.digitaloceanspaces.com',
+  COOKIE_ENCRYPTION_PASS: process.env.COOKIE_ENCRYPTION_PASS,
+  CURRENCY: 'SWAP.HIVE',
+  NFT_ISSUE_FEE_SYMBOL: 'BEE',
+  NFT_SYMBOL: 'TUNZ',
+  TOKEN_ISSUANCE_BASE_FEE: 4,
+  TOKEN_ISSUANCE_FEE: 1,
+  MARKET_FEE: 1000,
+  ROYALTY_PCT: 0.50,
+  AGENT_FEE: 0.20,
+  ADMINS: ['lensy', 'reazuliqbal', 'aggroed', 'r0nd0n', 'juliakponsford', 'crimsonclad', 'victoriabsb', 'swelker101', 'isaria', 'clayboyn'],
+  CATEGORIES: [
+    'Hip Hop', 'Pop', 'Country', 'Mood', 'Rock', 'Latin', 'Workout', 'Focus', 'Equal', 'R & B', 'Dance / Electonic', 'Gaming', 'Chill Indie', 'Christian', 'Deades', 'Romance', 'Instrumental', 'Alternative', 'Wellness', 'In the Car', 'Pride', 'Party', 'Sleep', 'Classical', 'Jazz', 'Folk and Acoustic', 'Soul', 'Cooking and Dining', 'K-Pop', 'Songwritiers', 'Punk', 'Mexican', 'Sports', 'Pop Culture', 'Blue', 'Arab', 'Desi', 'Anime', 'Afro', 'Comedy', 'Metal', 'Caribbean', 'Funk', 'Kids and Family',
+  ],
+};
